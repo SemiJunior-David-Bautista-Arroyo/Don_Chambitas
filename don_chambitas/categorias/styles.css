@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+
+#logo-principal{
+    margin: 10px;
+    margin-left: 100px;
+    width: 70px;
+    height: 50px;
+}
+
+#contenedor-mostrar-precio{
+    margin-top: 100px;
+}
+
+nav {
+    padding: 10px;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: middle;
+    background-color: rgb(250, 250, 250);
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinear los elementos a la derecha */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-left: auto; /* Mover los elementos hacia la derecha */
+}
+
+.nav-links li {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.nav-links a {
+
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+h2{
+    font-family: Montserrat;
+}
+
+#boton{
+    text-decoration: none;
+}
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    display: none; /* Ocultar el contenido inicialmente */
+    padding: 20px;
+  }
+
+.btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #F69231;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+.pulso:hover{
+    transform: scale(1.02);
+}
+
+.btn:hover{
+    background-color: #e98726;
+    transform: scale(1.02);
+}
+
+.contenedor{
+    background-color:rgb(219, 219, 219);
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+/* TODAS LAS CARDS */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.small-image {
+    width: 120px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantén la proporción de aspecto */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+#trabajadores{
+    width: 150px;
+    height: 200px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+
+.divider {
+    height: 30px;
+    width: 1px;
+    background-color: #e5e5e5;
+    margin: 10px 0;
+}
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch-label {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e5e5e5;
+    border-radius: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-switch-label:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch input:checked + .toggle-switch-label {
+    background-color: #28a745;
+}
+
+.toggle-switch input:checked + .toggle-switch-label:before {
+    transform: translateX(26px);
+}
+
+.toggle-switch-success .success-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    font-size: 24px;
+    color: #28a745;
+}
+
+.toggle-switch-success input:checked + .toggle-switch-label .success-icon {
+    display: inline-block;
+}

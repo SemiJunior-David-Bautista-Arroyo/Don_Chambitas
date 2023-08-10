@@ -1,0 +1,96 @@
+* {
+    /* Aplica a todo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.terminos{
+    padding: 15px;
+    color: blue;
+}
+
+a{
+    color: black;
+}
+
+/* Contenido header */
+header {
+    font-weight: bold;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .rounded-circle{ /*Para que se vea redonda la imagen*/
+        width: 50px;
+        height: auto;
+    }
+    
+    
+    /*CSS de los botones de settings dentro del perifl*/
+    .menu {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        height: 200px; /* Ajusta la altura  */
+    }
+    
+    .menu a{
+        margin: 190px;
+        justify-content: space-between;
+    }
+    
+     ion-icon {
+        font-size: 70px;
+      }
+    
+    .profile__cont{
+        position: absolute;
+        margin: 300px;
+        width: 70%;
+        top: auto;
+        background: #ffffff;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+    #historial, #config, #ayuda{
+        background-color: transparent;
+        border: none;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+
+    th {
+        justify-content: space-between;
+    }
+
+
+    th, td {
+      
+      text-align: left;
+      padding: 16px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .image {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 20px;
+  }
+
+  .info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-item {
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .specialty {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .price {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+}

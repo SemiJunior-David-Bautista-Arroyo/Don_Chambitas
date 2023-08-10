@@ -1,0 +1,29 @@
+/* Contenedor para los botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el div del botón personalizado */
+.custom-button {
+  text-align: center;
+  flex: 1; /* El botón ocupará el espacio disponible en el contenedor flex */
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+/* Estilos para los botones */
+.custom-button button {
+  padding: 10px 20px;
+  background-color: #87CEEB; /* Azul cielo */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos cuando se pasa el mouse sobre los botones */
+.custom-button button:hover {
+  background-color: #5F9EA0; /* Tonos más oscuros de azul cielo */
+}

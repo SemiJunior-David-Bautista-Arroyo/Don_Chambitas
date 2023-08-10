@@ -1,0 +1,199 @@
+.name, .last-name, .cellphone-number, .second-name, .genero, .password {
+    width: 48%;
+}
+
+
+.email {
+    width: 48%;
+    text-align: right;
+}
+
+.campo-incompleto{
+    border: solid 2px red;
+}
+
+/*editar que las letras no se vean tan juntas*/
+form div input{
+    padding: 15px;
+}
+#imagen{
+    margin-top: 9px;
+    height: 100;
+    justify-content: center;
+    border-bottom: none;
+}
+
+.container{
+    background-image: url(../assets/MORENO.jpg);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px); /* Para navegadores basados en WebKit */
+  }
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-row > div {
+    flex-basis: 48%; /* Ajusta el ancho de cada input */
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    border-radius: 6px;
+}
+
+.wrapper {
+    background-color: black;
+    position: relative;
+    width: 800px;
+    height: 540px;
+    left: 150px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    height: 400px;
+}
+
+
+.form-box h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 1.9em;
+    color: #162938;
+    border-top: 2px solid #162938;/*Borde(línea) que se ve */
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.buton {
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background: #f69231;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.buton-black {
+    width: 100%;
+    height: 45px;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn__omitir{
+    width: 48%;
+    height: 45px;
+    bottom: 0;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn__continuar{
+    width: 48%;
+    height: 45px;
+    bottom: 0;
+    background: #f69231;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.btn__omitir a{
+    color: white;
+    text-decoration: none;
+}
+
+/* body.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+
+#lg__titulo{
+    border-color: black;
+}

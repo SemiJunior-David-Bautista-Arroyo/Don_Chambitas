@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout de Tarjeta de Pago</title>
+</head>
+
+<body>
+    <div class="payment-container">
+        <div class="credit-card" style="background-color: black;">
+            <div class="card-front">
+                <div class="chip"></div>
+                <div class="card-number" id="cardNumber">1234 5678 9012 3456</div>
+                <div class="card-info">
+                    <div class="card-holder" id="cardHolder">NOMBRE DEL TITULAR</div>
+                    <div class="card-expiry" id="cardExpiry">MM/AA</div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="magnetic-stripe"></div>
+                <div class="signature"></div>
+                <div class="cvc">CVC</div>
+            </div>
+        </div>
+
+        <form class="payment-form">
+            <label for="card-number">Número de Tarjeta</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+
+            <label for="card-holder">Nombre del Titular</label>
+            <input type="text" id="card-holder" placeholder="Nombre del Titular">
+
+            <div class="form-row">
+                <div>
+                    <label for="expiry">Fecha de Vencimiento</label>
+                    <input type="text" id="expiry" placeholder="MM/AA">
+                </div>
+                <div>
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="CVC">
+                </div>
+            </div>
+
+            <button type="submit" style="background-color: black;">Pagar</button><br>
+            <button type="submit" style="background-color: orange;"><a style="text-decoration: none; color: #ffff;" href="../profiles/usuario.php">Volver</a></button>
+        </form>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
